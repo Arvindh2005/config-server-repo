@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: product
   datasource:
     url: jdbc:postgresql://localhost:5434/product
     username: username
@@ -23,6 +25,3 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: localhost
-
-jwt:
-  secret: "my-super-secure-256-bit-secret-key-for-jwt-authentication"
