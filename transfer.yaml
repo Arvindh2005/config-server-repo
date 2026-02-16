@@ -1,1 +1,24 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    show-sql: true
+
+  datasource:
+    url: jdbc:h2:mem:transfer
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: localhost
+
+
+server:
+  port : 8100
+
+jwt:
+  secret: "my-super-secure-256-bit-secret-key-for-jwt-authentication"
 
